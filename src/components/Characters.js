@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./Characters.css";
 import "./Mobile.css";
 import { Flipper, Flipped } from "react-flip-toolkit";
@@ -14,6 +14,7 @@ export default function Characters({ characters, pageSelector }) {
       return new Promise((resolve, reject) => {
         const loadImg = new Image();
         loadImg.src = imageUrl;
+        loadImg.alt = "image desc";
         loadImg.onload = () => {
           resolve(imageUrl);
         };
@@ -86,7 +87,7 @@ export default function Characters({ characters, pageSelector }) {
                     className="character-card-front"
                     onClick={() => onClick(char.id)}
                   >
-                    <img className="char-img" src={char.image}></img>
+                    <img className="char-img" src={char.image} alt="pic"></img>
                     <div className="info-front">
                       <div className="name-front">{char.name}</div>
                       <div className="species-front">{char.species}</div>

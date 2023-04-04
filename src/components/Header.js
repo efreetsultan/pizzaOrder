@@ -12,6 +12,7 @@ export default function Header({ onSelect, isCharLoaded, isLocLoaded }) {
         <img
           className="rickandmorty-logo"
           src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Rick_and_Morty.svg"
+          alt="something"
         />
       </div>
       <div className="header-buttons">
