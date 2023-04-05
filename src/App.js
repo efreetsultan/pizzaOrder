@@ -17,7 +17,7 @@ function App() {
   const characters = useCharacters(charPage);
   const locations = useLocations(locPage);
 
-  // console.log("Characters data: ");
+  // console.log("Characters data:  ");
   // console.log(characters);
   // console.log("Locations data: ");
   // console.log(locations);
